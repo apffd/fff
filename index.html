@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VALERA — SMM Агентство</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Курсор -->
+  <div class="cursor"></div>
+  <div class="cursor-dot"></div>
+
+  <!-- Фон с блобами -->
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a href="#" class="logo">VALERA<span>.</span></a>
+    <nav>
+      <a href="#services">Услуги</a>
+      <a href="#cases">Кейсы</a>
+      <a href="#about">О нас</a>
+      <a href="#contact" class="btn-nav">Обсудить проект</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Сменить тему">🎨</button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="tag">✦ SMM-агентство нового поколения</p>
+      <h1>
+        Превращаем<br>
+        подписчиков в <span class="gradient-text">клиентов</span>
+      </h1>
+      <p class="subtitle">
+        Продвижение в соцсетях, контент-стратегии и реклама, которые приносят продажи, а не просто лайки.
+      </p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn-primary">Начать рост ↗</a>
+        <a href="#cases" class="btn-secondary">Смотреть кейсы</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong data-count="180">0</strong><span>проектов</span></div>
+        <div><strong data-count="25">0</strong><span>млн охвата</span></div>
+        <div><strong data-count="97">0</strong><span>% довольных</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="phone">
+        <div class="phone-screen">
+          <div class="story-bar"></div>
+          <div class="post-card">
+            <div class="post-avatar"></div>
+            <div class="post-lines">
+              <span></span><span></span>
+            </div>
+          </div>
+          <div class="reel"></div>
+          <div class="reel small"></div>
+        </div>
+      </div>
+      <div class="floating-card card-1">❤️ +12.5k</div>
+      <div class="floating-card card-2">📈 +340%</div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services">
+    <h2>Что мы <span class="gradient-text">делаем</span></h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="icon">🎯</div>
+        <h3>Стратегия</h3>
+        <p>Изучаем бренд, аудиторию и конкурентов. Составляем план на 3–6 месяцев.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">🎨</div>
+        <h3>Контент</h3>
+        <p>Reels, сторис, дизайн, копирайтинг — всё, что цепляет и продаёт.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">🚀</div>
+        <h3>Реклама</h3>
+        <p>Таргет, посевы, блогеры. Настраиваем и масштабируем с окупаемостью x5.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">📊</div>
+        <h3>Аналитика</h3>
+        <p>Каждый рубль под контролем. Отчёты и прозрачные метрики.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASES -->
+  <section id="cases" class="cases">
+    <h2>Наши <span class="gradient-text">кейсы</span></h2>
+    <div class="cases-grid">
+      <div class="case-card">
+        <div class="case-img">
+          <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&q=80" alt="Beauty бренд" loading="lazy">
+        </div>
+        <div class="case-info">
+          <span class="case-tag">Beauty</span>
+          <h3>Бренд косметики</h3>
+          <p>+340% подписчиков за 3 месяца</p>
+        </div>
+      </div>
+      <div class="case-card">
+        <div class="case-img">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&q=80" alt="Сеть кофеен" loading="lazy">
+        </div>
+        <div class="case-info">
+          <span class="case-tag">HoReCa</span>
+          <h3>Сеть кофеен</h3>
+          <p>Реклама с ROI 540%</p>
+        </div>
+      </div>
+      <div class="case-card">
+        <div class="case-img">
+          <img src="jop.png" alt="Магазин одежды" loading="lazy">
+        </div>
+        <div class="case-info">
+          <span class="case-tag">E-commerce</span>
+          <h3>Магазин одежды</h3>
+          <p>1 млн ₽ выручки с Reels</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contact" class="cta">
+    <div class="cta-inner">
+      <h2>Готовы <span class="gradient-text">взлететь</span>?</h2>
+      <p>Оставьте заявку — обсудим ваш проект и предложим стратегию бесплатно.</p>
+      <form class="cta-form" onsubmit="return handleSubmit(event)">
+        <input type="text" placeholder="Ваше имя" required>
+        <input type="tel" placeholder="Телефон или Telegram" required>
+        <button type="submit">Отправить заявку →</button>
+      </form>
+      <p class="form-success" id="success">✓ Спасибо! Мы свяжемся с вами скоро.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 VALERA SMM Agency · Сделано с ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
